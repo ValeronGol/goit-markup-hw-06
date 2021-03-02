@@ -172,7 +172,7 @@ button {
 
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -200,8 +200,9 @@ button {
 
 .social-text {
   margin-bottom: 20px;
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-white);
@@ -243,7 +244,10 @@ button {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-white);
 }
@@ -251,8 +255,6 @@ button {
 .form-mail {
   position: relative;
   display: flex;
-  font-size: 16px;
-  line-height: 1.25;
 }
 
 .sign-input {
@@ -263,7 +265,7 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6)
-}
+ }
 
 .sign-btn {
   display: flex;
