@@ -173,6 +173,7 @@ button {
 .footer .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .address .item:not(:first-child) {
@@ -236,6 +237,46 @@ button {
 
 .social-list > .item:not(:first-child) {
   margin-left: 10px;
+}
+
+.sign {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.form-mail {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.sign-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.sign-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 28px;
+}
+
+.sign-btn .icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Стили для героя */
