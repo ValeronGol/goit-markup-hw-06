@@ -688,9 +688,11 @@ button {
 
 /* Стили для формы модального окна */
 .form-modal {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  color: var(--gray-text);
 }
 
 .form-input {
@@ -700,8 +702,10 @@ button {
 .form-caption {
   display: block;
   margin-bottom: 18px;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text);
 }
@@ -719,6 +723,7 @@ button {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  color: var(--title-text);
 }
 
 .modal-label {
@@ -739,7 +744,9 @@ button {
 }
 
 .modal-textarea::placeholder{
-  color: rgba(117, 117, 117, 0.5)
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: rgba (117, 117, 117, 0.5)
 }
 
 
@@ -770,11 +777,15 @@ button {
 
 .policy-label {
   position: relative;
-  padding-left: 25px;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
 .policy-label > .link {
+  font-weight: 400;
+  letter-spacing: 0.03em;
   color: var(--blue-text);
   text-decoration: underline;
   display: inline-block;
@@ -792,11 +803,13 @@ button {
   display: none;
 }
 
-.policy-checkbox:checked + .checkbox-icon{
+.policy-checkbox:checked + *.check-icon{
   border: none;
+  background-color: var(--blue-text);
+  fill: var(--text-white);
 }
 
-.policy-checkbox:checked + .checkbox-icon use {
+.policy-checkbox:checked + *.check-icon use {
   display: block;
 }
-  
+
