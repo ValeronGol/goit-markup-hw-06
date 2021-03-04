@@ -771,6 +771,7 @@ button {
 .policy-label {
   position: relative;
   padding-left: 25px;
+  cursor: pointer;
 }
 
 .policy-label > .link {
@@ -779,23 +780,23 @@ button {
   display: inline-block;
 }
 
-.policy-label::before {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  content: '';
-  display: inline-flex;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--title-text);
-  border-radius: 4px;
+.check-icon {
+  margin-right: 7px;
+  transform: translateY(15%);
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
+  
 }
 
-.policy-checkbox:checked + .policy-label::before {
-  border-color: transparent;
-  background-color: var(--blue-text);
-  background-image: url('../images/icon-check.svg');
-  background-size: contain;
-  background-origin: border-box;
-} 
+.check-icon use {
+  display: none;
+}
+
+.policy-checkbox:checked + .checkbox-icon{
+  border: none;
+}
+
+.policy-checkbox:checked + .checkbox-icon use {
+  display: block;
+}
+  
